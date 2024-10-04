@@ -26,6 +26,7 @@ body {
     /* Azul claro */
     --verdemedio: #3CB371;
     --verdeescuro: #006400;
+    --chumbo: #808080;
 
 
     --autogestao: #003366;
@@ -387,10 +388,10 @@ footer {
 }
 
 .etec_sports_imagem img {
-    height: 50%;
+    height: 80%;
     border: 2px solid var(--branco);
     box-shadow: 5px 5px 5px var(--cinza);
-    border-radius: 20px;   
+    border-radius: 20px;
 
 }
 
@@ -591,3 +592,50 @@ footer {
 #topo i {
     font-size: 20px;
 }
+
+#comparação {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--branco);
+    color: var(--preto);
+}
+#comparacao h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px var(--cinza);
+}
+#comparacao table{
+    width: 70%;
+    border-collapse: collapse;
+   }
+   #comparacao th,td{
+    padding: 15px;
+    text-align: left;
+    border: 1px solid black;
+   }
+   #comparacao th{
+    background-color:var(--chumbo);
+    color:var(--branco);
+    font-size: 20px;
+    font-weight: 700;
+   }
+   #comparacao tbody tr{
+    background-color:var(--branco);
+    transition: all 0.5s ease;
+   }
+   #comparacao tbody tr:hover{
+    background-color: var(--cinza);
+   }
+   .nome-modalidade-tabela{
+    text-align: center;
+    font-weight: 800;
+   }
+   .esforco-modalidade-tabela{
+    text-align:center;
+    font-style:inherit;
+   }
+   
